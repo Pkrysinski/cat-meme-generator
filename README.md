@@ -25,11 +25,11 @@ THEN the application generates a random cat fact (using the second API).
 Cat Meme Generator...
 https://cataas.com/#/
 
-## Rough Breakdown of Tasks
-See "cat-meme-generator project"
-
 Random Cat Fact generator...
 https://documenter.getpostman.com/view/1946054/S11HvKSz
+
+## Rough Breakdown of Tasks
+See "cat-meme-generator project"
 
 ## Project Requirements
 01 Must use at least 2 server side api's
