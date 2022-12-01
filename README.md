@@ -19,7 +19,14 @@ WHEN I click on "generate meme/fact",
 THEN the application generates a random cat fact (using the second API).
 
 ## Wireframe
-(SCREENSHOT OF WIREFRAME HERE)
+![Chose Cat State](https://github.com/Pkrysinski/cat-meme-generator/blob/main/assets/images/Chose%20Cat%20State.JPG)
+
+![Enter Text State] (https://github.com/Pkrysinski/cat-meme-generator/blob/main/assets/images/Enter%20Text%20State.JPG)
+
+![Generate Meme State] (https://github.com/Pkrysinski/cat-meme-generator/blob/main/assets/images/Meme%20Generate%20State.JPG)
+
+![Initial Page State] (https://github.com/Pkrysinski/cat-meme-generator/blob/main/assets/images/open%20page%20state.JPG)
+
 
 ## APIs to be Used
 Cat Meme Generator...
