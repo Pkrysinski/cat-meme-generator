@@ -18,10 +18,15 @@ THEN the application takes the text in the input box and generates a meme with i
 WHEN I click on "generate meme/fact",
 THEN the application generates a random cat fact (using the second API).
 
+## Wireframe
+(SCREENSHOT OF WIREFRAME HERE)
 
 ## APIs to be Used
 Cat Meme Generator...
 https://cataas.com/#/
+
+## Rough Breakdown of Tasks
+See "cat-meme-generator project"
 
 Random Cat Fact generator...
 https://documenter.getpostman.com/view/1946054/S11HvKSz
