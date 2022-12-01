@@ -36,7 +36,8 @@ See "cat-meme-generator project"
 >One for cat meme generator, one for random cat fact
 
 02 Must use a CSS framework other than bootstrap
->TODO: Looking into this...
+>UI Kit.
+>https://getuikit.com/docs/introduction
 
 03 Must use client-side storage to store persistent data
 >Going to store previous cat facts
