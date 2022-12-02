@@ -37,12 +37,10 @@ function getCatMeme(){
     fetch("https://cataas.com/cat/says/" + memeText + "?json=true")
     .then(function(resp) { return resp.json() }) // Convert data to json
     .then(function(data) {
-
         // Creat the cat image and append to the cat-meme div
         var catImageEL = document.createElement('img');
         catImageEL.src = baseURL + data.url;
         catMemeEL.appendChild(catImageEL);
-
     })
     .catch(function(err) {
       // catch any errors
@@ -57,12 +55,10 @@ function getRandomCatImg() {
     fetch("https://cataas.com//cat?json=true")
     .then(function(resp) { return resp.json() }) // Convert data to json
     .then(function(data) {
-
         // Creat the cat image and append to the cat-meme div
         var catImageEL = document.createElement('img');
         catImageEL.src = baseURL + data.url;
         catMemeEL.appendChild(catImageEL);
-
     })
     .catch(function(err) {
       // catch any errors
@@ -75,10 +71,8 @@ function getRandomCatImg() {
 
 // On init, get a random cat image and put in the image box, read history from storage
 function init() {
-
     getRandomCatImg()
     getCatFact();
-
     // readHistoryFromStorage();
 };
 
