@@ -57,6 +57,9 @@ var getCatMeme = function (event) {
       // catch any errors
       console.log(err);
   });
+  
+  getCatFact();
+  readHistoryFromStorage();
 };
 
 function getRandomCatImg() {
@@ -122,7 +125,6 @@ function readHistoryFromStorage() {
 // On init, get a random cat image and put in the image box, read history from storage
 function init() {
     getRandomCatImg()
-    getCatFact();
     readHistoryFromStorage();
 };
 
