@@ -5,22 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <title>Cat Meme Generator</title>
 </head>
 <body>
     <header>
-        <h1>MeowMeme</h1>
-        <p>The internet's best feline meme resource</p>
+        <div class="container">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-8">
+                <h1>MeowMeme</h1>
+                <p>The internet's best feline meme resource</p>
+                </div>
+            </div>         
+        </div>
     </header>
 
     <main>
-        <div class="cat-meme-div">
-            <input type="text" id="meme-text" placeholder="Enter meme text here"><br><br>
-            <button id="meme-button">Generate Meme & Fact</button>               
-            <div id="cat-meme"></div>
-            <p id="cat-fact">Here is where our cat fact will go</p>
-            <button id="history-button">Show Fact History</button>
-            <div id="cat-fact-history"></div>
+        <div class="container">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-8">
+                    <input type="text" id="meme-text" placeholder="Enter meme text here"><br><br>
+                    <button id="meme-button">Generate Meme & Fact</button>               
+                    <div id="cat-meme"></div>
+                    <p id="cat-fact">Here is where our cat fact will go</p>
+                    <br>
+                    <button id="history-button">Show Fact History</button>
+                    <div id="cat-fact-history"></div>
+                </div>
+            </div>
         </div>
     </main>
     

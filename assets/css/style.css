@@ -1,3 +1,8 @@
 img {
     width: 300px;
+    padding: 20px;
+};
+
+p {
+    padding: 20px;    
 };
