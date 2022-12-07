@@ -1,57 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-    <title>Cat Meme Generator</title>
-</head>
-<body class="has-background-info">
-    <header class="header m-3">
-        <div class="container">
-            <div class="columns">
-                <div class="column">
-                    <h1 class="title">MeowMeme  <span class="subtitle">The internet's best feline meme resource</span></h1>
-                </div>
-            </div>         
-        </div>
-    </header>
 
-    <br>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"
+            content="IE=edge">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+        <link rel="stylesheet" type="text/css"
+            href="./assets/css/style.css" />
+        <title>Cat Meme Generator</title>
+    </head>
 
-    <main class="has-background-info">
-        <div class="container box">
-            <div class="columns is-centered has-text-centered">
-                <div class="column is-8">
-                    <input type="text" id="meme-text" placeholder="Enter meme text here"><br><br>
-                    <button id="meme-button">Generate Meme & Fact</button>               
-                    <div id="cat-meme"></div>
-                    <p id="cat-fact">Here is where our cat fact will go</p>
-                    <br>
-                </div>
-            </div>
-        </div>
-        <div class="container box">
-            <div class="columns is-centered has-text-centered">
-                <div class="column">
-                    <button id="history-button">Show Fact History</button>
-                    <div id="cat-fact-history"></div>
+    <body class="has-background-info">
+        <header class="navbar-brand">
+            <a><img class="mx-6 py-4"
+                    src="assets\images\cat icon small.png"
+                    width="96" height="96"
+                    alt="kitty silhouette"></a>
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-gapless">
+                        <figure class="image is-48x48">
+                        </figure>
+                        <span
+                            class="title has-text-white">MeowMeme
+                        </span>
+                        <span
+                            class="subtitle has-text-white">The
+                            internet's best feline meme
+                            source.
+                        </span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </main>
+        </header>
 
-    <footer class="footer has-background-info">
-        <div class="content has-text-centered">
-          <p>
-            <strong>MeowMeme</strong> by BCS Team 6. The source code is licensed
-            <a href="https://github.com/Pkrysinski/cat-meme-generator">MIT</a>.
-          </p>
-        </div>
-    </footer>
-    
-    <script src="./assets/js/script.js"></script>
-</body>
+        <br>
+
+        <main class="has-background-info">
+            <div class="container box">
+                <div
+                    class="columns is-centered has-text-centered">
+                    <div class="column is-8">
+                        <div class="field">
+                            <label class="meme-title">Meme
+                                generator</label><br>
+                            <div class="control pt-4">
+                                <input class="input"
+                                    id="meme-text"
+                                    type="text"
+                                    placeholder="Input your meme text here">
+                            </div><br><br>
+                            <button
+                                class="button is-info is-size-5"
+                                id="meme-button">Generate
+                                Meme & Fact</button><br><br>
+
+                            <div class="image is-1by1"
+                                id="cat-meme"></div>
+
+                            <br>
+                            <p id="cat-fact"
+                                class="is-size-5">Here is
+                                where
+                                our
+                                cat fact will go</p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="container box">
+                    <div
+                        class="columns is-centered has-text-centered">
+                        <div class="column is-size-5">
+                            <p>Fun feline facts:</p>
+                            <div id="cat-fact-history">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </main>
+
+        <footer class="footer has-background-info">
+            <div class="content has-text-centered">
+                <p>
+                    <strong>MeowMeme</strong> by BCS Team 6.
+                    The source code is licensed
+                    <a
+                        href="https://github.com/Pkrysinski/cat-meme-generator">MIT</a>.
+                </p>
+            </div>
+        </footer>
+
+        <script src="./assets/js/script.js"></script>
+    </body>
+
 </html>

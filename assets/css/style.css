@@ -5,7 +5,28 @@ body {
 
 img {
     width: 300px;
+    height: 300px;
+    padding: 20px;
+};
+
+cat-meme {
+    width: 300px;
+    height: 300px;
     padding: 20px;
 };
 
 
+
+.control {
+    border-radius: 6px;
+    box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+    color: #050000;
+    display: block;
+    padding: 1.25rem;
+}
+
+.meme-title {
+    color:hsl(204, 86%, 53%);
+    font-size: 1.75rem;
+    font-weight:500;
+}
