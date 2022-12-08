@@ -45,6 +45,10 @@ var getCatMeme = function (event) {
     // Get the meme text from user input
     var memeText = memeTextEL.value.trim();
 
+    if (memeText == ''){
+      catMemeEL.textContent = "Enter in some text to get a meme!  We'll still give you a fact, though..."
+    }
+
     fetch("https://cataas.com/cat/says/" + memeText + "?json=true")
     .then(function(resp) { return resp.json() }) // Convert data to json
     .then(function(data) {
