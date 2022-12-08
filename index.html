@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Here is the link to the Bulma CSS.  There's 2 different ways you can use Bulma (out of the box like this, or more customizable with .sass files) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <!-- We originaly had our own custom CSS file here, but Bulma is so picky with how you use their classes it's their way or the highway, so we removed this -->
     <title>Cat Meme Generator</title>
 </head>
+
+<!-- Here's our main body class for all on-page content -->
 <body class="has-background-info is-family-monospace">
     <header class="header m-3">
+        <!-- If you want to use "customizable" containers, you must follow the container>columns>column architecture for their column-based layout -->
         <div class="container">
             <div class="columns">
                 <div class="column">
@@ -18,15 +22,16 @@
             </div>         
         </div>
     </header>
-
     <main class="has-background-info">
         <div class="container box">
             <div class="columns is-centered has-text-centered">
                 <div class="column is-8">
                     <input class="input is-info is-normal is-rounded" type="text" id="meme-text" placeholder="Enter meme text here"><br><br>
                     <button class="button is-info is-light is-large block is-rounded" id="meme-button">Generate Meme & Fact</button>
-                    <br>               
+                    <br>
+                    <!-- Here is the dynamic div where the cat meme goes based on the API request #1 in the JavaScript file -->
                     <div class="block" id="cat-meme"></div>
+                    <!-- Here is the dynamic div where the cat fact goes based on the API request #2 in the JavaScript file -->
                     <p class="subtitle" id="cat-fact">Look here to see a fun cat fact after you make your meme!</p>
                     <br>
                 </div>
@@ -45,12 +50,14 @@
     <footer class="footer has-background-info">
         <div class="content has-text-centered">
           <p>
+            <!-- Here's our link to the repository if you want to look at the project! -->
             <strong>MeowMeme</strong> by BCS Team 6. The source code is licensed
             <a href="https://github.com/Pkrysinski/cat-meme-generator">MIT</a>.
           </p>
         </div>
     </footer>
     
+    <!-- Here's our link to the JavaScript file which provides all the page logic -->
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
