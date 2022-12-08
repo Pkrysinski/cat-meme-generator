@@ -3,6 +3,9 @@
 ## Project Title
 Cat Meme Generator
 
+## URL To Deployed Site
+https://pkrysinski.github.io/cat-meme-generator/
+
 ## Project Description
 Well we all love cats and dogs.  We've decided to move forward making a cat-related API that serves 2 purposes - first to allow the user to generate a cat-related MEME, and second to provide the user with cat facts.
 
@@ -36,30 +39,29 @@ Random Cat Fact generator...
 https://documenter.getpostman.com/view/1946054/S11HvKSz
 
 ## Rough Breakdown of Tasks
-See "cat-meme-generator project"
+See "cat-meme-generator project".
 
 ## Project Requirements
 01 Must use at least 2 server side api's
->One for cat meme generator, one for random cat fact
+>One for cat meme generator, one for random cat fact.
 
 02 Must use a CSS framework other than bootstrap
->UI Kit.
->https://getuikit.com/docs/introduction
+>Bulma.
 
 03 Must use client-side storage to store persistent data
->Going to store previous cat facts
+>Going to store previous cat facts.
 
 04 Must have polished UI
->UI shall be polished
+>UI shall be polished.
 
 05 Must meet quality coding standards
->Coding standards shall be quality
+>Coding standards shall be quality.
 
 06 Must NOT use alerts, confirms, or prompts (look into modals)
->Going to play with rendering the last 10 facts from storage to a modal
+>Going to play with rendering the last 10 facts from storage to a modal.
 
 07 Must be deployed to GitHub Pages
->Deployment shall be to GitHub Pages
+>Deployment shall be to GitHub Pages.
 
 08 Must be interactive
 >App will take user input for the cat meme generator for what text to display to the meme.
