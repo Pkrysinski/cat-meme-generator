@@ -47,21 +47,21 @@ var getCatMeme = function (event) {
 
     if (memeText == ''){
       catMemeEL.textContent = "Enter in some text to get a meme!  We'll still give you a fact, though..."
+    } else {
+      fetch("https://cataas.com/cat/says/" + memeText + "?json=true")
+      .then(function(resp) { return resp.json() }) // Convert data to json
+      .then(function(data) {
+          // Creat the cat image and append to the cat-meme div
+          var catImageEL = document.createElement('img');
+          catImageEL.src = baseURL + data.url;
+          catMemeEL.appendChild(catImageEL);
+      })
+      .catch(function(err) {
+        // catch any errors
+        console.log(err);
+      });
     }
 
-    fetch("https://cataas.com/cat/says/" + memeText + "?json=true")
-    .then(function(resp) { return resp.json() }) // Convert data to json
-    .then(function(data) {
-        // Creat the cat image and append to the cat-meme div
-        var catImageEL = document.createElement('img');
-        catImageEL.src = baseURL + data.url;
-        catMemeEL.appendChild(catImageEL);
-    })
-    .catch(function(err) {
-      // catch any errors
-      console.log(err);
-  });
-  
   getCatFact();
   readHistoryFromStorage();
 };
